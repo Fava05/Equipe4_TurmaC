@@ -1,0 +1,47 @@
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 5rem; /* Defina uma altura adequada para o header */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 3rem; /* Adiciona um espaço no topo para evitar a sobreposição */
+    color: rgb(77, 210, 255);
+}
+
+img {
+    position: absolute;
+    right: 0%;
+    width: 4rem;
+}
+
+h1 {
+    position: fixed;
+    color: rgb(77, 210, 255);
+}
+
+h2{
+    
+}
+
+.criar_sala{background-color: darkgray;
+padding:0.5rem;
+border-radius:0.7rem
+}
+.caixa_nome_sala{
+    background-color: darkgray;
+padding:1rem 6rem;
+border-radius:0.5rem
+
+}
+/* nova sala**/
