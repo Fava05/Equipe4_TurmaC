@@ -15,7 +15,7 @@ main {
     justify-content: center;
     align-items: center;
     position: relative;
-    padding-top: 5rem; /* Adiciona um espaço no topo para evitar a sobreposição */
+    padding-top: 3rem; /* Adiciona um espaço no topo para evitar a sobreposição */
 }
 
 img {
