@@ -28,10 +28,10 @@ h1 {
     padding: 0.5rem 1rem;
 }
 
-/* Para as notas (usando Poppins Light) */
+/* Para as notas (usando Sans-serif light) */
 p {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300; /* Light */
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300; /* Light para manter a leveza do texto */
     font-size: 1rem; /* Ajuste o tamanho conforme necessário */
 }
 
