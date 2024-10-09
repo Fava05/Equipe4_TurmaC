@@ -15,15 +15,27 @@ main {
     justify-content: center;
     align-items: center;
     position: relative;
-    padding-top: 3rem; /* Adiciona um espaço no topo para evitar a sobreposição */
+    padding-top: 2rem; /* Adiciona um espaço no topo para evitar a sobreposição */
 }
 
 img {
     position: absolute;
-    right: 0%;
-    width: 4rem;
+    top: -10%;
+    right: -2%;
+    width: 3.5rem;
 }
 
 h1 {
     position: fixed;
+}
+
+.pesquise{
+    border-radius: 0.7rem;
+    background-color: rgba(238, 238, 238, 0.926);
+    color: rgb(77,210,255);
+    padding: 0.5rem 1rem;
+}
+
+.salvo{
+    align-self: flex-start;
 }
