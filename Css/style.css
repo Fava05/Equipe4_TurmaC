@@ -1,13 +1,29 @@
-header{
+header {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 5rem; /* Defina uma altura adequada para o header */
 }
 
-body {
+main {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    position: relative;
+    padding-top: 5rem; /* Adiciona um espaço no topo para evitar a sobreposição */
+}
 
+img {
+    position: absolute;
+    right: 0%;
+    width: 4rem;
+}
+
+h1 {
+    position: fixed;
 }
