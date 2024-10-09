@@ -16,6 +16,7 @@ main {
     align-items: center;
     position: relative;
     padding-top: 3rem; /* Adiciona um espaço no topo para evitar a sobreposição */
+    color: rgb(77, 210, 255);
 }
 
 img {
@@ -26,4 +27,5 @@ img {
 
 h1 {
     position: fixed;
+    color: rgb(77, 210, 255);
 }
