@@ -5,18 +5,26 @@ header {
     align-items: center;
     padding: 0.5rem 1rem;
     font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
+    font-size: 1.5rem;
     position: relative; /* Necessário para ajustar a posição do ícone do menu */
 }
 
 h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    font-size: 1.5rem; /* Ajusta o tamanho da fonte */
+    font-size: 2rem; /* Ajusta o tamanho da fonte */
     display: flex;
     align-items: center; /* Centraliza verticalmente */
 }
 
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem; /* Ajusta o tamanho da fonte */
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+
+}
 h1 em {
     font-style: italic;
     margin-right: 0.5rem;
@@ -109,6 +117,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding-top: 2rem;
 }
 
@@ -120,14 +129,35 @@ a {
 
 
 /* Classes para ingressar em sala e criar sala (botões)*/
+.main_nova_sala{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10rem;
+}
 .criar_sala{background-color: darkgray;
     margin-top: 0.5rem;
     padding:0.3rem;
-    border-radius:0.7rem
+    border-radius:0.7rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 0.7rem; /* Aumenta o tamanho da fonte */
+    text-align: center;
+    color: black; /* Cor preta para o texto */
+    text-decoration: none;
+
     }
 .caixa_nome_sala{
     background-color: darkgray;
 margin-top: 1rem;
 padding:1rem 6rem;
-border-radius:0.5rem
+border-radius:0.7rem;
+font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 0.7rem; /* Aumenta o tamanho da fonte */
+    text-align: center;
+    color: black; /* Cor preta para o texto */
+    text-decoration: none;
+    
 }
