@@ -208,3 +208,192 @@ font-family: 'Poppins', sans-serif;
 .comentario{
     border:0.3rem black;
 }
+
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-evenly; /* Centraliza o conteúdo do header */
+    align-items: center;
+    padding: 0.5rem 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    position: relative; /* Necessário para ajustar a posição do ícone do menu */
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2rem; /* Ajusta o tamanho da fonte */
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem; /* Ajusta o tamanho da fonte */
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+
+}
+h1 em {
+    font-style: italic;
+    margin-right: 0.5rem;
+    color:rgb(77, 210, 255);
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-left: 0.5rem; /* Ajusta o espaçamento entre "Pública" e "Privada" */
+}
+
+/* Ícone do menu no header */
+header img {
+    position: absolute;
+    right: 0rem; /* Posiciona o ícone no lado esquerdo */
+    width: 2.5rem; /* Ajusta o tamanho do ícone */
+    height: 3rem;
+}
+
+/* Para o subtítulo "PESQUISE MATÉRIA" */
+.pesquise {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(77, 210, 255, 0.226);
+    border-radius: 0.7rem;
+    padding: 0.5rem 0.2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem; /* Aumenta o tamanho da fonte */
+    color: black; /* Cor preta para o texto */
+    margin-bottom: 1.5rem;
+    text-align: center;
+    width: 20rem; /* Ocupa toda a largura disponível */
+    max-width: 350px; /* Define um limite para a largura */
+}
+
+.ingresse{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(77, 210, 255, 0.226);
+    border-radius: 0.7rem;
+    padding: 0.5rem 0.2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem; /* Aumenta o tamanho da fonte */
+    color: black; /* Cor preta para o texto */
+    margin-bottom: 1.5rem;
+    text-align: center;
+    width: 20rem; /* Ocupa toda a largura disponível */
+    max-width: 350px; /* Define um limite para a largura */
+}
+
+/*ícone de mais para criair uma nova sala*/
+
+
+/* Ícone ao lado de "Pesquisar Matéria" */
+.pesquise::before {
+    content: '\1F50D'; /* Unicode do ícone de lupa */
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+/* Estilo para "SALVOS" */
+.salvo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Garante o alinhamento à esquerda do conteúdo */
+    gap: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: black;
+
+    margin-bottom: 1.5rem;
+    /* Estilo da caixa semelhante às matérias */
+    background-color: rgba(238, 238, 238, 0.926);
+    border-radius: 0.7rem;
+    padding: 0.3rem 1.5rem;
+    box-sizing: border-box;
+
+    /* Definindo largura semelhante às matérias */
+    width: auto;
+    max-width: 18rem;
+    align-self: flex-start; /* Move a caixa "SALVOS" para a esquerda */
+    margin-left: 1rem; /* Adiciona espaçamento da borda esquerda */
+}
+
+
+/* Ícone ao lado de "SALVOS" */
+.salvo::before {
+    content: '\1F516'; /* Ícone unicode de marcador */
+    font-size: 1.5rem;
+}
+
+/* Estilo para os links de "SALVOS" */
+.baloes {
+    display: flex;
+    align-items: center;
+    background-color: rgba(238, 238, 238, 0.926);
+    border-radius: 0.7rem;
+    padding: 0.8rem 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    width: 18rem; /* Mesma largura dos balões de matérias */
+    height: auto; /* Altura ajustável conforme o conteúdo */
+    box-sizing: border-box;
+}
+
+/* Main */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+/* Ajustes gerais para links */
+a {
+    text-decoration: none;
+    color: black; /* Cor preta para todos os links */
+}
+
+
+/* Classes para ingressar em sala e criar sala (botões)*/
+.main_nova_sala{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10rem;
+}
+.criar_sala{background-color:  rgba(238, 238, 238, 0.926);;
+    margin-top: 0.5rem;
+    padding:0.3rem;
+    border-radius:0.7rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 0.7rem; /* Aumenta o tamanho da fonte */
+    text-align: center;
+    color: black; /* Cor preta para o texto */
+    text-decoration: none;
+
+    }
+.caixa_nome_sala{
+    background-color:  rgba(238, 238, 238, 0.926);;
+margin-top: 1rem;
+padding:1rem 6rem;
+}
+
