@@ -65,6 +65,26 @@ header img {
     max-width: 350px; /* Define um limite para a largura */
 }
 
+.ingresse{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(77, 210, 255, 0.226);
+    border-radius: 0.7rem;
+    padding: 0.5rem 0.2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem; /* Aumenta o tamanho da fonte */
+    color: black; /* Cor preta para o texto */
+    margin-bottom: 1.5rem;
+    text-align: center;
+    width: 20rem; /* Ocupa toda a largura disponível */
+    max-width: 350px; /* Define um limite para a largura */
+}
+
+/*ícone de mais para criair uma nova sala*/
+
+
 /* Ícone ao lado de "Pesquisar Matéria" */
 .pesquise::before {
     content: '\1F50D'; /* Unicode do ícone de lupa */
