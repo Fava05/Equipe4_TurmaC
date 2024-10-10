@@ -117,3 +117,17 @@ a {
     text-decoration: none;
     color: black; /* Cor preta para todos os links */
 }
+
+
+/* Classes para ingressar em sala e criar sala (botões)*/
+.criar_sala{background-color: darkgray;
+    margin-top: 0.5rem;
+    padding:0.3rem;
+    border-radius:0.7rem
+    }
+.caixa_nome_sala{
+    background-color: darkgray;
+margin-top: 1rem;
+padding:1rem 6rem;
+border-radius:0.5rem
+}
