@@ -20,10 +20,16 @@ h1 {
 h2{
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    font-size: 1.2rem; /* Ajusta o tamanho da fonte */
+    font-size: 1.5rem; /* Ajusta o tamanho da fonte */
     display: flex;
     align-items: center; /* Centraliza verticalmente */
 
+}
+
+h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem; /* Ajusta o tamanho da fonte */
 }
 h1 em {
     font-style: italic;
@@ -191,4 +197,14 @@ font-family: 'Poppins', sans-serif;
     color: black; /* Cor preta para o texto */
     text-decoration: none;
     
+}
+
+.opcoes_grupo_privado{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+} 
+.comentario{
+    border:0.3rem black;
 }
