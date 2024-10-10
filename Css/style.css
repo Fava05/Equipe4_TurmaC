@@ -1,60 +1,119 @@
 /* Header */
 header {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: space-evenly; /* Centraliza o conteúdo do header */
     align-items: center;
-    justify-content: center;
-    position: relative;
-    height: 5rem; /* Defina uma altura adequada para o header */
+    padding: 0.5rem 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    position: relative; /* Necessário para ajustar a posição do ícone do menu */
 }
 
-/* Para os títulos Pública e Privada (usando Poppins Semi-Bold) */
 h1 {
     font-family: 'Poppins', sans-serif;
-    font-weight: 600; /* Semi-Bold */
-    font-size: 2rem; /* Ajuste o tamanho conforme necessário */
-    position: fixed;
+    font-weight: 600;
+    font-size: 1.5rem; /* Ajusta o tamanho da fonte */
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
 }
 
-/* Para o subtítulo "PESQUISE MATÉRIAS" (usando Poppins Medium) */
+h1 em {
+    font-style: italic;
+    margin-right: 0.5rem;
+    color:rgb(77, 210, 255);
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-left: 0.5rem; /* Ajusta o espaçamento entre "Pública" e "Privada" */
+}
+
+/* Ícone do menu no header */
+header img {
+    position: absolute;
+    right: 0rem; /* Posiciona o ícone no lado esquerdo */
+    width: 2.5rem; /* Ajusta o tamanho do ícone */
+    height: 3rem;
+}
+
+/* Para o subtítulo "PESQUISE MATÉRIA" */
 .pesquise {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500; /* Medium */
-    font-size: 1.5rem; /* Ajuste o tamanho conforme necessário */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(77, 210, 255, 0.226);
     border-radius: 0.7rem;
-    background-color: rgba(238, 238, 238, 0.926);
-    color: rgb(77,210,255);
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem; /* Aumenta o tamanho da fonte */
+    color: black; /* Cor preta para o texto */
+    margin-bottom: 1.5rem;
+    text-align: center;
+    width: 20rem; /* Ocupa toda a largura disponível */
+    max-width: 350px; /* Define um limite para a largura */
 }
 
-/* Para as notas (usando Sans-serif light) */
-p {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300; /* Light para manter a leveza do texto */
-    font-size: 1rem; /* Ajuste o tamanho conforme necessário */
+/* Ícone ao lado de "Pesquisar Matéria" */
+.pesquise::before {
+    content: '\1F50D'; /* Unicode do ícone de lupa */
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
 }
 
-/* Para alinhar o texto "SALVOS" à esquerda */
+/* Estilo para "SALVOS" */
 .salvo {
-    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem; /* Aumenta o tamanho da fonte */
+    color: black; /* Cor preta */
+    margin-bottom: 1rem;
+    text-align: left; /* Alinha à esquerda */
+    width: 100%;
+    max-width: 350px; /* Limita a largura */
+    padding-left: 1rem; /* Ajusta a posição para a esquerda */
+}
+
+/* Ícone ao lado de "SALVOS" */
+.salvo::before {
+    content: '\1F516'; /* Ícone unicode de marcador */
+    font-size: 1.5rem;
+}
+
+/* Estilo para os links de "SALVOS" */
+.baloes {
+    display: block;
+    background-color: rgba(238, 238, 238, 0.926);
+    border-radius: 0.7rem;
+    padding: 0.8rem 1.5rem; /* Aumenta o padding */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem; /* Aumenta o tamanho da fonte */
+    text-align: center;
+    color: black; /* Cor preta para o texto */
+    text-decoration: none;
+    margin-bottom: 1rem; /* Aumenta o espaçamento entre os balões */
+    width: 18rem; /* Define a largura fixa dos balões */
+    height: 3rem; /* Define a altura fixa */
+    box-sizing: border-box; /* Garante que padding esteja dentro da largura */
 }
 
 /* Main */
 main {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
-    position: relative;
-    padding-top: 2rem; /* Adiciona um espaço no topo para evitar a sobreposição */
+    padding-top: 2rem;
 }
 
-/* Estilização da imagem */
-img {
-    position: absolute;
-    top: -10%;
-    right: -2%;
-    width: 3.5rem;
+/* Ajustes gerais para links */
+a {
+    text-decoration: none;
+    color: black; /* Cor preta para todos os links */
 }
