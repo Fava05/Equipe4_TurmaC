@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
-        <title>Fluxo 2</title>
+        <title>Fluxo 2 - Anunciar Aula</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/Equipe4_TurmaC/Css/reset.css">
         <link rel="stylesheet" href="../Css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
-            <img src="../img/icone.jpg" alt="botão de menu a direita">
+            <img src="../img/icone.jpg" alt="botão de menu a direita" class="menu-icon">
             <h1>
-                <em>Pública</em>/<a href="tela_incial_privada.html">Privada</a> 
+                <em class="publico">Pública</em>/<a href="tela_incial_privada.html" class="privado">Privada</a>
             </h1>
         </header>
-        <main>
-            <p>
-                <a href="pesquisar_materias.html">[Álg.Lin-USP]</a> 
-            </p>
-            <p>
-                <a href="algelin_resumo.html">Registros</a>/<em>Aulas</em>
-            </p>
-            <h4>Anuncie uma aula:</h4>
-            <p>
-                Adicione uma Descricação:
-            </p>
-            <p>
-                Adicione um Preço:
-            </p>
-            <a href="anunciar.com">ANUNCIAR</a>
+        <main class="anunciar-aula">
+            <!-- Matéria Atual -->
+            <a class="pesquise" href="pesquisar_materias.html">ALGLIN - USP</a>
+
+            <!-- Navegação entre registros e aulas -->
+            <h2 class="nav-text">
+                <a href="algelin_resumo.html" class="aulas">Registros</a>/<em class="resumo">Aulas</em>
+            </h2>
+
+            <!-- Formulário para Anunciar Aula -->
+            <h4 class="form-title">ANUNCIAR AULA:</h4>
+            
+            <p class="label-text">DESCRIÇÃO:</p>
+            <p class="label-text">PREÇO:</p>
+            
+            <!-- Botão para Anunciar Aula -->
+            <a class="baloes" href="anunciar.com">ANUNCIAR</a>
         </main>
     </body>
 </html>
