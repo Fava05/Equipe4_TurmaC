@@ -76,17 +76,27 @@ header img {
 .salvo {
     display: flex;
     align-items: center;
+    justify-content: flex-start; /* Garante o alinhamento à esquerda do conteúdo */
     gap: 0.5rem;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    font-size: 1.1rem; /* Aumenta o tamanho da fonte */
-    color: black; /* Cor preta */
-    margin-bottom: 1rem;
-    text-align: left; /* Alinha à esquerda */
-    width: 100%;
-    max-width: 350px; /* Limita a largura */
-    padding-left: 1rem; /* Ajusta a posição para a esquerda */
+    font-size: 1.1rem;
+    color: black;
+
+
+    /* Estilo da caixa semelhante às matérias */
+    background-color: rgba(238, 238, 238, 0.926);
+    border-radius: 0.7rem;
+    padding: 0.3rem 1.5rem;
+    box-sizing: border-box;
+
+    /* Definindo largura semelhante às matérias */
+    width: auto;
+    max-width: 18rem;
+    align-self: flex-start; /* Move a caixa "SALVOS" para a esquerda */
+    margin-left: 1rem; /* Adiciona espaçamento da borda esquerda */
 }
+
 
 /* Ícone ao lado de "SALVOS" */
 .salvo::before {
@@ -97,19 +107,20 @@ header img {
 /* Estilo para os links de "SALVOS" */
 .baloes {
     display: block;
-    background-color: rgba(238, 238, 238, 0.926);
+    background-color: rgba(77, 210, 255, 0.226);
     border-radius: 0.7rem;
-    padding: 0.8rem 1.5rem; /* Aumenta o padding */
+    padding: 0.8rem 1.5rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    font-size: 1.1rem; /* Aumenta o tamanho da fonte */
+    font-size: 1.1rem;
     text-align: center;
-    color: black; /* Cor preta para o texto */
+    color: black;
     text-decoration: none;
-    margin-bottom: 1rem; /* Aumenta o espaçamento entre os balões */
-    width: 18rem; /* Define a largura fixa dos balões */
-    height: 3rem; /* Define a altura fixa */
-    box-sizing: border-box; /* Garante que padding esteja dentro da largura */
+    margin-bottom: 0.3rem;
+    width: 18rem; /* Mantém a largura das matérias */
+    height: 3rem;
+    box-sizing: border-box;
+    align-self: center; /* Mantém as matérias centralizadas */
 }
 
 /* Main */
