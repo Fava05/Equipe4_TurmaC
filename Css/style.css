@@ -5,18 +5,26 @@ header {
     align-items: center;
     padding: 0.5rem 1rem;
     font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
+    font-size: 1.5rem;
     position: relative; /* Necessário para ajustar a posição do ícone do menu */
 }
 
 h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    font-size: 1.5rem; /* Ajusta o tamanho da fonte */
+    font-size: 2rem; /* Ajusta o tamanho da fonte */
     display: flex;
     align-items: center; /* Centraliza verticalmente */
 }
 
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem; /* Ajusta o tamanho da fonte */
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+
+}
 h1 em {
     font-style: italic;
     margin-right: 0.5rem;
@@ -57,6 +65,26 @@ header img {
     max-width: 350px; /* Define um limite para a largura */
 }
 
+.ingresse{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(77, 210, 255, 0.226);
+    border-radius: 0.7rem;
+    padding: 0.5rem 0.2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem; /* Aumenta o tamanho da fonte */
+    color: black; /* Cor preta para o texto */
+    margin-bottom: 1.5rem;
+    text-align: center;
+    width: 20rem; /* Ocupa toda a largura disponível */
+    max-width: 350px; /* Define um limite para a largura */
+}
+
+/*ícone de mais para criair uma nova sala*/
+
+
 /* Ícone ao lado de "Pesquisar Matéria" */
 .pesquise::before {
     content: '\1F50D'; /* Unicode do ícone de lupa */
@@ -75,7 +103,7 @@ header img {
     font-size: 1.1rem;
     color: black;
 
-
+    margin-bottom: 1.5rem;
     /* Estilo da caixa semelhante às matérias */
     background-color: rgba(238, 238, 238, 0.926);
     border-radius: 0.7rem;
@@ -119,7 +147,8 @@ header img {
 main {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Mantém as matérias centralizadas */
+    align-items: center;
+    justify-content: center;
     padding-top: 2rem;
 }
 
@@ -131,107 +160,35 @@ a {
 
 
 /* Classes para ingressar em sala e criar sala (botões)*/
-.criar_sala{background-color: darkgray;
-    margin-top: 0.5rem;
-    padding:0.3rem;
-    border-radius:0.7rem
-    }
-.caixa_nome_sala{
-    background-color: darkgray;
-margin-top: 1rem;
-padding:1rem 6rem;
-border-radius:0.5rem
-}
-
-/* Ícone do menu no header */
-.menu-icon {
-    position: absolute;
-    right: 1rem;
-    width: 2rem;
-    height: 2rem;
-}
-
-/* Estilo para os links "Pública" e "Privada" */
-.publico {
-    font-weight: bold;
-}
-
-.privado {
-    text-decoration: none;
-    color: black;
-}
-
-
-
-.linha {
-    display: flex;
-    flex-direction: row;
-}
-
-.icone-professor {
-    width: 2rem;
-    height: 2rem;
-    background-color: black;
-    border-radius: 50%;
-    margin-right: 1rem;
-}
-
-.conteudo-balao {
+.main_nova_sala{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10rem;
 }
-
-.nome-professor {
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-}
-
-.valor-aula {
+.criar_sala{background-color:  rgba(238, 238, 238, 0.926);;
     margin-top: 0.5rem;
-}
-
-.estrelas {
-    color: black;
-}
-
-/* Botão de adicionar aula */
-.adicionar-icone {
-    font-size: 2rem;
-    font-weight: bold;
-    color: gray;
-    display: block;
-    text-align: center;
-    margin-top: 2rem;
-}
-
-/* Estilo para subtítulos "Resumos" e "Aulas" */
-.nav-text {
+    padding:0.3rem;
+    border-radius:0.7rem;
     font-family: 'Poppins', sans-serif;
-    font-size: 1rem; /* Tamanho menor para subtítulos */
-    font-weight: 500; /* Peso ligeiramente mais leve que o título principal */
+    font-weight: 600;
+    font-size: 0.7rem; /* Aumenta o tamanho da fonte */
     text-align: center;
-    margin-bottom: 1rem;
-}
-
-.resumo {
-    font-style: italic;
-    color: rgb(77, 210, 255);
-}
-
-.aulas {
+    color: black; /* Cor preta para o texto */
     text-decoration: none;
-    color: black;
-    font-weight: 500;
+
+    }
+.caixa_nome_sala{
+    background-color:  rgba(238, 238, 238, 0.926);;
+margin-top: 1rem;
+padding:1rem 6rem;
+border-radius:0.7rem;
+font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 0.7rem; /* Aumenta o tamanho da fonte */
+    text-align: center;
+    color: black; /* Cor preta para o texto */
+    text-decoration: none;
+    
 }
-
-
-/* Estilos específicos para a página de Anunciar Aula */
-.anunciar-aula .label-text {
-    font-size: 1rem;
-    margin-top: 1rem;
-    text-align: left; /* Alinha o texto à esquerda */
-    padding-left: 1rem; /* Adiciona espaçamento à esquerda */
-}
-
