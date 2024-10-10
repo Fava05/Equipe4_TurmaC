@@ -147,7 +147,7 @@ a {
     justify-content: center;
     padding-top: 10rem;
 }
-.criar_sala{background-color: darkgray;
+.criar_sala{background-color:  rgba(238, 238, 238, 0.926);;
     margin-top: 0.5rem;
     padding:0.3rem;
     border-radius:0.7rem;
@@ -160,7 +160,7 @@ a {
 
     }
 .caixa_nome_sala{
-    background-color: darkgray;
+    background-color:  rgba(238, 238, 238, 0.926);;
 margin-top: 1rem;
 padding:1rem 6rem;
 border-radius:0.7rem;
