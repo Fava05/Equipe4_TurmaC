@@ -264,9 +264,11 @@ a {
     font-weight: 500;
 }
 
-/*.img-darkmode{
-    min-width: 10px;
-    width: 3%;
-    height: auto;
-    padding: 0.5rem;
-}*/
+.img-darkmode {
+    width: 50px; /* Ajuste o tamanho da imagem */
+    height: auto; /* Mantém a proporção */
+    position: absolute; /* Permite o posicionamento exato */
+    top: 10px; /* Ajusta a posição vertical */
+    left: 10px; /* Coloca a imagem no lado esquerdo */
+    cursor: pointer; /* Mostra o cursor de clique */
+}
