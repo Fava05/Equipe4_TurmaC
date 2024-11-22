@@ -28,8 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
             // Salvar a lista atualizada no sessionStorage
             sessionStorage.setItem("salas", JSON.stringify(salas));
 
-            console.log("Nova sala criada e salva no sessionStorage:", salas);
-
             // Redirecionar para a página "pesquisar_materia_privado.html"
             window.location.href = "pesquisar_materia_privado.html";
         } else {
