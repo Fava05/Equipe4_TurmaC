@@ -18,32 +18,44 @@ imgMode.addEventListener('click', () => {
     
     const nomeSala = document.getElementById("nomeSala");
     const criarSala = document.getElementById("criarSala");
-    const salaContainer = document.getElementById("salaContainer");
-
+    
     criarSala.addEventListener("click", function () {
         const nomeDigitado = nomeSala.textContent.trim();
-
+    
         if (nomeDigitado) {
-            // Cria um novo elemento
-            const novaSala = document.createElement("p");
-            const novoLink = document.createElement("a");
-
-            // Define os atributos e o conteúdo
-            novoLink.classList.add("baloes");
-            novoLink.href = `${nomeDigitado.toLowerCase().replace(/\s+/g, "_")}.html`;
-            novoLink.textContent = nomeDigitado;
-
-            // Adiciona o link ao parágrafo
-            novaSala.appendChild(novoLink);
-
-            // Adiciona o novo parágrafo ao container
-            salaContainer.appendChild(novaSala);
-
+            // Salva o nome da sala no LocalStorage
+            let salas = JSON.parse(localStorage.getItem("salas")) || [];
+            salas.push(nomeDigitado);
+            localStorage.setItem("salas", JSON.stringify(salas));
+    
             // Reseta o campo de entrada
             nomeSala.textContent = "Nome da sala";
+    
+            // Redireciona de volta ao index.html (opcional)
+            window.location.href = "index.html";
         } else {
             alert("Por favor, insira um nome para a sala.");
         }
     });
+
+    const salaContainer = document.getElementById("salaContainer");
+
+    // Recupera as salas do LocalStorage
+    let salas = JSON.parse(localStorage.getItem("salas")) || [];
+
+    // Adiciona as salas ao container
+    salas.forEach(nomeSala => {
+        const novaSala = document.createElement("p");
+        const novoLink = document.createElement("a");
+
+        novoLink.classList.add("baloes");
+        novoLink.href = `${nomeSala.toLowerCase().replace(/\s+/g, "_")}.html`;
+        novoLink.textContent = nomeSala;
+
+        novaSala.appendChild(novoLink);
+        salaContainer.appendChild(novaSala);
+    });
+
+    
 
 });
