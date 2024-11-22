@@ -1,13 +1,3 @@
-
-
-// Seleciona todos os elementos com a classe 'resumo'
-const elementosResumo = document.querySelectorAll('.resumo');
-
-// Muda a cor das palavras da classe 'resumo' para azul escuro ou azul claro
-elementosResumo.forEach(elemento => {
-    elemento.style.color = isDarkMode ? '#0845d4' : '#4dd2ff'; // Azul escuro no modo escuro, azul claro no modo claro
-});
-
 const nomeSala = document.getElementById("nomeSala");
 const criarSala = document.getElementById("criarSala");
 const salaContainer = document.getElementById("salaContainer");
