@@ -103,6 +103,7 @@ header img {
     text-align: center;
     width: 20rem; /* Ocupa toda a largura disponível */
     max-width: 350px; /* Define um limite para a largura */
+    text-decoration: none;
 }
 
 /* Ícone de lupa ao lado de "Pesquisar Matéria" */
