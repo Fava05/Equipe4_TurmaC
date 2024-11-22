@@ -1,7 +1,7 @@
 /* Header */
 header {
     display: flex;
-    justify-content: space-evenly; /* Centraliza o conteúdo do header */
+    justify-content: space-between; /* Centraliza o conteúdo do header */
     align-items: center;
     padding: 0.5rem 1rem;
     font-family: 'Poppins', sans-serif;
@@ -9,13 +9,13 @@ header {
     position: relative; /* Necessário para ajustar a posição do ícone do menu */
 }
 
-h1 {width:75%;
+h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 2rem; /* Ajusta o tamanho da fonte */
     display: flex;
     align-items: center; /* Centraliza verticalmente */
-    justify-content:space-between;
+    justify-content: center;
 }
 
 h2 {
