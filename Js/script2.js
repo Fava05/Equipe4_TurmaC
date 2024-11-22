@@ -5,6 +5,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const salas = JSON.parse(sessionStorage.getItem("salas")) || [];
     console.log("Salas recuperadas do sessionStorage:", salas);
 
+    // Remove todos os balões existentes (se necessário)
+    document.querySelectorAll(".baloes").forEach((balao) => balao.remove());
+
     // Adiciona as salas existentes como balões
     salas.forEach((sala) => {
         const balao = document.createElement("p");
