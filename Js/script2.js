@@ -1,18 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const main = document.querySelector("main");
+    const mainElement = document.querySelector("main");
 
-    // Recupera os balões salvos no localStorage
+    // Recuperar as salas do LocalStorage
     const salas = JSON.parse(localStorage.getItem("salas")) || [];
 
-    // Cria e adiciona os balões ao <main>
+    // Adiciona as salas existentes como balões
     salas.forEach((sala) => {
         const balao = document.createElement("p");
         const link = document.createElement("a");
-        link.className = "baloes";
-        link.href = "#"; // Ajuste o link conforme necessário
+
+        balao.classList.add("baloes");
+        link.href = "#"; // Você pode definir uma ação para cada sala aqui
         link.textContent = sala;
 
         balao.appendChild(link);
-        main.appendChild(balao);
+        mainElement.appendChild(balao);
     });
 });
