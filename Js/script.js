@@ -7,22 +7,25 @@ document.addEventListener("DOMContentLoaded", () => {
         if (nomeSala.textContent === "Nome da sala") {
             nomeSala.textContent = "";
         }
-        console.log('oi')
     });
-
-
 
     // Adiciona evento ao botão "Criar sala"
     criarSalaBtn.addEventListener("click", () => {
         const novoNomeSala = nomeSala.textContent.trim();
 
         if (novoNomeSala) {
-            // Salvar o nome da sala no LocalStorage para transferir entre páginas
-            const salas = JSON.parse(localStorage.getItem("salas")) || [];
+            // Recupera a lista de salas existente ou cria uma nova lista
+            let salas = JSON.parse(localStorage.getItem("salas")) || [];
+
+            // Adiciona o novo nome à lista
             salas.push(novoNomeSala);
+
+            // Salva a lista atualizada no localStorage
             localStorage.setItem("salas", JSON.stringify(salas));
 
-            // Redirecionar para a página "pesquisar_materia_privado.html"
+            console.log("Sala criada e salva no localStorage:", salas);
+
+            // Redireciona para a página "pesquisar_materia_privado.html"
             window.location.href = "pesquisar_materia_privado.html";
         } else {
             alert("Digite um nome válido para a sala!");
