@@ -1,8 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
     const mainElement = document.querySelector("main");
 
-    // Recuperar as salas do LocalStorage
-    const salas = JSON.parse(localStorage.getItem("salas")) || [];
+    // Recuperar as salas do sessionStorage
+    const salas = JSON.parse(sessionStorage.getItem("salas")) || [];
+    console.log("Salas recuperadas do sessionStorage:", salas);
 
     // Adiciona as salas existentes como balões
     salas.forEach((sala) => {
@@ -15,5 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         balao.appendChild(link);
         mainElement.appendChild(balao);
+
+        console.log(`Balão criado para a sala: ${sala}`);
     });
 });
