@@ -1,6 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
     const mainElement = document.querySelector("main");
 
+    // Verifica se já limpamos os balões nesta sessão
+    const isInitialized = sessionStorage.getItem("initialized");
+
+    if (!isInitialized) {
+        // Limpa as salas na primeira vez que o site é carregado na sessão
+        sessionStorage.setItem("salas", JSON.stringify([]));
+        sessionStorage.setItem("initialized", "true");
+        console.log("Sessão inicializada e salas limpas.");
+    }
+
     // Recuperar as salas do sessionStorage
     const salas = JSON.parse(sessionStorage.getItem("salas")) || [];
     console.log("Salas recuperadas do sessionStorage:", salas);

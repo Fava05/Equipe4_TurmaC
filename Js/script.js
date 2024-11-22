@@ -1,7 +1,3 @@
-localStorage.clear();
-sessionStorage.clear();
-
-
 document.addEventListener("DOMContentLoaded", () => {
     const nomeSala = document.getElementById("nomeSala");
     const criarSalaBtn = document.getElementById("criarSala");
